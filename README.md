@@ -23,6 +23,4 @@ There are two functions: `one_step_attention()` and `model()`.
 -`one_step_attention()`: At step <i>t</i>, given all the hidden states of the Bi-LSTM and the previous hidden state of the second LSTM
 `one_step_attention()` will compute the attention weights and output the context vector.
 
--`model()`: Implements the entire model. It first runs the input through a Bi-LSTM.Then, it calls `one_step_attention()` <i>Ty</i> times.
-At each iteration of this loop, it gives the computed context vector to the second LSTM, and runs the output of the LSTM through a dense
-layer with softmax activation to generate a prediction. 
+-`model()`: Implements the entire model.  It first runs the input through a Bi-LSTM.Then,  it calls `one_step_attention()`  <i>Ty</i> times. At each iteration of this loop,  it gives the computed context vector to the second LSTM,  and runs the output of the LSTM through a dense layer with softmax activation to generate a prediction. 
